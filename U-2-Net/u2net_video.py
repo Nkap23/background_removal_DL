@@ -58,8 +58,8 @@ def main():
 
 
 
-    image_dir = os.path.join(os.getcwd(), 'test_data', 'test_images')
-    prediction_dir = os.path.join(os.getcwd(), 'test_data', model_name + '_results' + os.sep)
+    image_dir = os.path.join(os.getcwd(),'test_data','videos','input_frames')
+    prediction_dir = os.path.join(os.getcwd(),'test_data','videos',model_name+'_results'+os.sep)
     model_dir = os.path.join(os.getcwd(), 'saved_models', model_name, model_name + '.pth')
 
     img_name_list = glob.glob(image_dir + os.sep + '*')
